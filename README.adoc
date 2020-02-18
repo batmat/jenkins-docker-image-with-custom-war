@@ -1,0 +1,7 @@
+= Demo on customizing plugins *and* the `jenkins.war` from the official Jenkins Docker image
+
+== How to use
+
+1. copy the `jenkins.war` you want to use instead of the original one next to the Dockerfile (**using this exact filename**)
+2. Build `docker build -t custom-jenkins .`
+3. Run, e.g. `docker run -p 8080:8080 custom-jenkins`
